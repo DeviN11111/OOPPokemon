@@ -1,6 +1,6 @@
-class weakness{
-    constructor(name, value){
-        this.name = name;
+class Weakness{
+    constructor(energyType, value){
+        this.energyType = energyType;
         this.value = value;
     }
 }

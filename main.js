@@ -2,8 +2,10 @@ name = "Pikachu1";
 maxHealth = 50;
 attacks = [new Attack("Fireball", 100), new Attack("Jump", 50)]
 energyType = new energyType("Lightning", 0);
+weakness = new weakness(new energyType("Fire", 0), 1.5);
+resistance = new resistance(new energyType("Fighting", 0), 0)
 
-Pokemon.pokemonArray.push(new Pokemon("1", 10, energyType, attacks))
+Pokemon.pokemonArray.push(new Pokemon("1", 10, energyType, attacks, weakness))
 
 
 /////////////////////////////////////////////////////////////////////////////
