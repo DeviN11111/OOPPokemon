@@ -35,7 +35,8 @@ class Pokemon{
     static removeDead(){
         for(var i=0; i<Pokemon.pokemonArray.length; i++){
             if(Pokemon.pokemonArray[i].health <= 0){
-                Pokemon.pokemonArray.splice(Pokemon.pokemonArray[i], 1)
+                Pokemon.pokemonArray.splice(Pokemon.pokemonArray[i], 1);
+                amountOfPokemon--;
             }
         }
     }
