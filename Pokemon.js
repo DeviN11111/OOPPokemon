@@ -26,9 +26,18 @@ class Pokemon{
         }else{
             this.health = this.health - attack.value
         }
-        // if(!this.health <= 0){
-        //     Pokemon.pokemonArray.splice(Pokemon.pokemonArray[Pokemon.pokemonArray.indexOf(this)], 1)
-        // }
+    }
+
+    getPopulation(){
+        return amountOfPokemon;
+    }
+
+    static removeDead(){
+        for(var i=0; i<Pokemon.pokemonArray.length; i++){
+            if(Pokemon.pokemonArray[i].health <= 0){
+                Pokemon.pokemonArray.splice(Pokemon.pokemonArray[i], 1)
+            }
+        }
     }
 
 }
